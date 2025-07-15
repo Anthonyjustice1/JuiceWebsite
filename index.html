@@ -9,7 +9,13 @@
   </head>
   <body>
     <div class="container">
-      <header>
+      <div class="heroSec">
+        <video autoplay loop muted playsinline class="heroBg">
+
+            <source src="./images/vid1.mp4" type="video/mp4">
+
+        </video>
+<header>
         <img src="./images/logo.png" alt="" />
         <nav>
           <ul class="navList">
@@ -19,16 +25,32 @@
             <li><a href="#">Contact Us</a></li>
           </ul>
         </nav>
-        <div class="nav-btn">         
-          <svg height="24px" width="24px">
-            <use href="#close-menu" />
-          </svg>
-          <svg height="24px" width="24px">
+<div class="nav-btn">
+  <svg height="24px" width="24px" id="menuIcon">
             <use href="#menu" />
           </svg>
-        </div>
+ <svg height="24px" width="24px" id="closeIcon">
+            <use href="#close-menu" />
+          </svg>
+
+</div>
+
+
+        
+
       </header>
-      <section id="home"></section>
+
+
+<section id="home">
+<img src="./images/berry.png" alt="">
+<img src="./images/grape.png" alt="">
+<img src="./images/grape.png" alt="">
+<img src="./images/grape.png" alt="">
+</section>
+
+
+      </div>
+      
     </div>
     <svg style="display: none">
       <symbol id="menu" viewbox="0 0 24 24">
@@ -46,3 +68,47 @@
     </svg>
   </body>
 </html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Slide Menu</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="./images/logo.png" alt="Logo" />
+        <nav>
+          <ul class="navList" id="navList">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div class="nav-btn" id="menuBtn">
+          <svg height="24px" width="24px" id="menuIcon">
+            <use href="#menu" />
+          </svg>
+        </div>
+      </header>
+    </div>
+
+ 
+    <svg style="display: none">
+      <symbol id="menu" viewBox="0 0 24 24">
+        <path
+          d="M24 18v1h-24v-1h24zm0-6v1h-24v-1h24zm0-6v1h-24v-1h24z"
+          fill="#1040e2"
+        />
+      </symbol>
+    </svg>
+  </body>
+</html>
+ -->

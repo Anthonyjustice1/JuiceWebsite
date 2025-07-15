@@ -1,14 +1,25 @@
-const menu = document.querySelector("#menu");
-const navList = document.querySelector('header nav .navList')
+const menubtn = document.querySelector('#menuIcon');
+const closebtn = document.querySelector('#closeIcon');
+const navlist = document.querySelector('nav .navList');
+console.log(closebtn);
 
-// menu.addEventListener('click', ()=>{
-//   if(navList.style.right = '0') {
-//     navList.style.right == '-100%'
-//   }
-// })
+menubtn.addEventListener('click', (e)=> {
+if (e.target.id === 'menuIcon' && navlist.style.right === '-100%') {
+    navlist.style.right ='-50%';
+    menubtn.style.display = 'none';
+    // menubtn.style.transition = '0.3s ease';
+    closebtn.style.display = 'block';
+} else {
+    navlist.style.right = '-100%';
+}
+})
 
-menuList.style.right = "-100%";
-
-menu.addEventListener("click", () => {
-  menuList.style.right = menuList.style.right === "0%" ? "-100%" : "0%";
-});
+closebtn.addEventListener('click', (e)=> {
+    if (e.target.id === 'closeIcon' && navlist.style.right === '-50%') {
+        navlist.style.right = '-100%';
+        closebtn.style.display = 'none';
+        menubtn.style.display = 'block';
+    } else {
+        navlist.style.right ='-50%';
+    }
+})
