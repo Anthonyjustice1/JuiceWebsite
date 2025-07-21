@@ -11,6 +11,7 @@
 }
 .vidSec {
   position: relative;
+  /* padding-bottom: 2vh; */
 }
 header {
   display: flex;
@@ -18,13 +19,16 @@ header {
   justify-content: space-between;
   margin-bottom: 20vh;
 }
-
 header img {
   height: 50px;
   width: 50px;
+  margin: 5px;
+  cursor: pointer;
 }
 nav .navList {
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   padding: 3vh;
   border-radius: 50px;
   margin: 5px;
@@ -41,52 +45,110 @@ nav .navList li a {
 .nav-btn {
   display: none;
 }
-#menuIcon, #closeIcon {
+#menuIcon,
+#closeIcon {
   display: none;
 }
+#home {
+   position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
 .heroBg {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  object-fit: cover;
 }
 .hero {
   text-align: center;
 }
 .hero h1 {
   text-align: center;
-  font-size:65px;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 80px;
   font-weight: 900;
   margin-bottom: 5vh;
   color: #000;
   /* font-family: springwood display Demo; */
 }
+.hero p {
+  font-size: 17px;
+}
 #home .col3 {
-  margin: 5vh ;
+  margin: 5vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.span1 {
+.col3 .span1 {
   background: black;
   color: #fff;
   padding: 7px;
   border-radius: 5px;
   margin-right: 5px;
+  cursor: pointer;
 }
-.span2 {
+.col3 .span2 {
   border: 1px solid #000;
   padding: 5px;
   border-radius: 5px;
+  cursor: pointer;
+}
+#home .overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(to bottom, transparent, #ffeb3b); 
+  z-index: 2;
+}
+#about {
+  background: linear-gradient(135deg, #fff9c4, #f6d422, #ffca28, #ffc107, #f6d422);
+    position: relative;
+    height: auto;
+  overflow: hidden;
+}
+#about .overlay1 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(to top, transparent, #ffeb3b); 
+  z-index: 2;
 }
 
-
-
-
-
+#about h1 {
+  font-size: 70px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 8vh 0 5vh 0;
+}
+#about p {
+  font-size: 17px;
+  text-align: center;
+  margin-bottom: 5vh;
+}
+.about-cat {
+  width: 100%;
+    display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.about-cat img {
+  margin: 0 15vh;
+  height: 40vh;
+width: 230px;
+  object-fit: cover;
+  background: linear-gradient(135deg, #fff9c4, #f6d422, #ffca28, #ffc107, #f6d422);
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 
 
 
@@ -112,18 +174,21 @@ nav .navList li a {
   .container {
     padding: 0;
   }
+  .vidSec {
+    /* padding: 0 1vh 2vh 1vh; */
+  }
   header {
-    margin: 0 3px;
+    margin: 0 5px 10vh 5px;
   }
   nav .navList {
     background: black;
     position: fixed;
     height: 40vh;
-    top: 8vh;
+    top: 9vh;
     right: -105%;
     width: 100%;
     overflow: hidden;
-    transition:  0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
     z-index: 999;
   }
   nav .navList li {
@@ -136,11 +201,48 @@ nav .navList li a {
   .nav-btn {
     display: block;
   }
-#menuIcon{
-  display: block;
-  
+  #menuIcon {
+    display: block;
+  }
 }
-
+@media screen and (max-width:1169px) {
+  .about-cat img {
+    margin: 2vh 0;
+  }
 }
-
+@media screen and (max-width: 868px) {
+  .hero h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 804px) {
+  #about h1 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 588px) {
+  #about h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 490px) {
+  .about-cat {
+    flex-direction: column;
+  }
+  .about-cat img {
+  margin: 2vh 0;
+  height: 40vh;
+width: 200px;
+}
+}
+@media screen and (max-width: 320px) {
+  .hero h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 361px) {
+  .hero h1 {
+    font-size: 35px;
+  }
+}
 
