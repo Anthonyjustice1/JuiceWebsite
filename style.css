@@ -51,14 +51,12 @@ nav .navList li a {
   color: #16155f;
   cursor: pointer;
 }
-
 .nav-btn {
   display: none;
 }
-
-#menuIcon,
-#closeIcon {
+#menuIcon, #closeIcon {
   display: none;
+  cursor: pointer;
 }
 
 #home {
@@ -85,7 +83,6 @@ nav .navList li a {
 .hero h1 {
   text-align: center;
   width: auto;
-  margin: ;
   font-size: 70px;
   font-weight: 900;
   margin-bottom: 5vh;
@@ -100,7 +97,9 @@ nav .navList li a {
 
 #home .col3 {
   margin: 10vh 0;
+  width: auto;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
@@ -149,13 +148,14 @@ nav .navList li a {
 .card-container {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .card {
-  width: 320px;
-  height: 350px;
-  /* background-color: #f0c20a; */
-  background-color: #d9d8c2;
+  max-width: 320px;
+  height: auto;
+  margin: 2rem;
+  /* background-color: #d9d8c2; */
   overflow: hidden;
   position: relative;
   border-radius: 15px;
@@ -219,15 +219,15 @@ nav .navList li a {
 
 .menulist {
   width: 320px;
-  /* height: 350px; */
   background: #e7f29d;
-background: linear-gradient(216deg, rgba(231, 242, 157, 1) 0%, rgba(217, 216, 194, 1) 50%, rgba(255, 132, 56, 1) 100%);
-    padding: 1rem;
+  background: linear-gradient(216deg, rgba(231, 242, 157, 1) 0%, rgba(217, 216, 194, 1) 50%, rgba(255, 132, 56, 1) 100%);
+  padding: 1rem;
   overflow: hidden;
   position: relative;
   border-radius: 18px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
+
 #favIcon {
   fill: #FFf;
   position: absolute;
@@ -237,6 +237,7 @@ background: linear-gradient(216deg, rgba(231, 242, 157, 1) 0%, rgba(217, 216, 19
   padding: 5px;
   border-radius: 0 0 0 10px;
 }
+
 .menulist img {
   width: 75%;
   height: 75%;
@@ -268,7 +269,6 @@ background: linear-gradient(216deg, rgba(231, 242, 157, 1) 0%, rgba(217, 216, 19
 
   nav .navList {
     background: #d9d8c2;
-    ;
     position: fixed;
     height: 35vh;
     top: 8vh;
@@ -289,89 +289,91 @@ background: linear-gradient(216deg, rgba(231, 242, 157, 1) 0%, rgba(217, 216, 19
     font-size: 19px;
     font-weight: 900;
   }
-
-  .nav-btn {
-    display: block;
-  }
-
-  #menuIcon {
-    display: block;
-  }
+.nav-btn {
+  display: block;
 }
-
-@media screen and (max-width:1169px) {
-  .about-cat img {
-    margin: 2vh 0;
-  }
+#menuIcon {
+  display: block;
 }
-
-@media screen and (max-width: 868px) {
-  .hero h1 {
-    font-size: 40px;
-  }
-}
-
-@media screen and (max-width: 868px) {
-  .about-cat img {
-    margin: 1vh;
-  }
-}
-
-@media screen and (max-width:952px) {
-  .hero h1 {
-    font-size: 60px;
-  }
-
-  #about h1 {
-    font-size: 60px;
-  }
-}
-
-@media screen and (max-width: 804px) {
-  #about h1 {
-    font-size: 50px;
-  }
-}
-
-@media screen and (max-width:576px) {
-  .hero h1 {
-    font-size: 50px;
-  }
-}
-
-@media screen and (max-width: 588px) {
-  #about h1 {
-    font-size: 40px;
-  }
 
 }
 
-@media screen and (max-width: 490px) {
-  .about-cat {
-    flex-direction: column;
+
+
+
+  @media screen and (max-width:1169px) {
+    .about-cat img {
+      margin: 2vh 0;
+    }
   }
 
-  .about-cat img {
-    margin: 2vh 0;
-    height: 40vh;
-    width: 200px;
+  @media screen and (max-width: 868px) {
+    .hero h1 {
+      font-size: 40px;
+    }
   }
-}
 
-@media screen and (max-width: 452px) {
-  .hero h1 {
-    font-size: 40px;
+  @media screen and (max-width: 868px) {
+    .about-cat img {
+      margin: 1vh;
+    }
   }
-}
 
-@media screen and (max-width: 320px) {
-  .hero h1 {
-    font-size: 30px;
-  }
-}
+  @media screen and (max-width:952px) {
+    .hero h1 {
+      font-size: 60px;
+    }
 
-@media screen and (max-width: 361px) {
-  .hero h1 {
-    font-size: 35px;
+    #about h1 {
+      font-size: 60px;
+    }
   }
-}
+
+  @media screen and (max-width: 804px) {
+    #about h1 {
+      font-size: 50px;
+    }
+  }
+
+  @media screen and (max-width:576px) {
+    .hero h1 {
+      font-size: 50px;
+    }
+  }
+
+  @media screen and (max-width: 588px) {
+    #about h1 {
+      font-size: 40px;
+    }
+
+  }
+
+  @media screen and (max-width: 490px) {
+    .about-cat {
+      flex-direction: column;
+    }
+
+    .about-cat img {
+      margin: 2vh 0;
+      height: 40vh;
+      width: 200px;
+    }
+  }
+
+  @media screen and (max-width: 452px) {
+    .hero h1 {
+      font-size: 40px;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    .hero h1 {
+      font-size: 30px;
+    }
+  }
+
+  @media screen and (max-width: 361px) {
+    .hero h1 {
+      font-size: 35px;
+    }
+  }
