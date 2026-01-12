@@ -240,6 +240,13 @@ nav .navList li a:hover {
   background: #fbf4fd;
   padding: 1rem;
 }
+#menu h1 {
+  /* width: auto; */
+  font-size: 60px;
+  margin: 0px 0px 40px 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #16155f;
+}
 
 .menulist {
   width: 320px;
@@ -313,7 +320,14 @@ nav .navList li a:hover {
 .marquee-container:hover .marquee {
   animation-play-state: paused;
 }
+#sitemap {
 
+}
+
+.contact img {
+  height: 30px;
+  width: auto;
+}
 
 /* 
 .menuimg img {

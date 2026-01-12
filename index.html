@@ -1,112 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
-  <title>Document</title>
-</head>
+  <body>
+    <main class="container">
+      <div class="vidSec">
+        <video autoplay loop muted playsinline class="heroBg">
+          <source src="./images/vid3.mp4" type="video/mp4" />
+        </video>
+        <header>
+          <img src="./images/logo.png" alt="" />
+          <nav>
+            <ul class="navList">
+              <li><a href="#">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#menu">Services</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+            </ul>
+          </nav>
+          <div class="nav-btn">
+            <svg height="24px" width="24px" id="menuIcon">
+              <use href="#menubtn" />
+            </svg>
+            <svg height="22px" width="22px" id="closeIcon">
+              <use href="#close-menu" />
+            </svg>
+          </div>
+        </header>
 
-<body>
-  <main class="container">
-    <div class="vidSec">
-      <video autoplay loop muted playsinline class="heroBg">
-        <source src="./images/vid3.mp4" type="video/mp4" />
-      </video>
-      <header>
-        <img src="./images/logo.png" alt="" />
-        <nav>
-          <ul class="navList">
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#menu">Services</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-        </nav>
-        <div class="nav-btn">
+        <section id="home">
+          <div class="hero">
+            <h1>Revitalize your Routine, Fresh, Fruity, Fantastic!</h1>
+            <p>
+              "Savor the Symphony of Flavours, with Nature's Sweetness and
+              Deliciousness. <br />
+              Get the best variety of juices here"
+            </p>
+            <div class="col3">
+              <p class="span1">View Menu</p>
+              <p class="span2">Discount</p>
+            </div>
+          </div>
+        </section>
+      </div>
 
-          <svg height="24px" width="24px" id="menuIcon">
-            <use href="#menubtn" />
-          </svg>
-          <svg height="22px" width="22px" id="closeIcon">
-            <use href="#close-menu" />
-          </svg>
-        </div>
-      </header>
-
-      <section id="home">
-        <div class="hero">
-          <h1>Revitalize your Routine, Fresh, Fruity, Fantastic!</h1>
+      <section id="about">
+        <div class="about-des">
+          <h1>Why We Are Better</h1>
           <p>
-            "Savor the Symphony of Flavours, with Nature's Sweetness and
-            Deliciousness. <br />
-            Get the best variety of juices here"
+            Our commnitment to excellence in the realm of juices sets us apart
+            from the competition
           </p>
-          <div class="col3">
-            <p class="span1">View Menu</p>
-            <p class="span2">Discount</p>
-          </div>
         </div>
 
+        <div class="card-container">
+          <div class="card">
+            <img src="/images/grapes.jpg" alt="" />
+            <div class="card-content">
+              <h3>Grape Flavour</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Tempore, voluptates. Eius id magnam rem vero?
+              </p>
+              <a href="" class="btn">See More</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="/images/grapes.jpg" alt="" />
+            <div class="card-content">
+              <h3>Grape Flavour</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Tempore, voluptates. Eius id magnam rem vero?
+              </p>
+              <a href="" class="btn">See More</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="/images/grapes.jpg" alt="" />
+            <div class="card-content">
+              <h3>Grape Flavour</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Tempore, voluptates. Eius id magnam rem vero?
+              </p>
+              <a href="" class="btn">See More</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="/images/grapes.jpg" alt="" />
+            <div class="card-content">
+              <h3>Grape Flavour</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Tempore, voluptates. Eius id magnam rem vero?
+              </p>
+              <a href="" class="btn">See More</a>
+            </div>
+          </div>
+        </div>
       </section>
-    </div>
 
-    <section id="about">
-      <div class="about-des">
-        <h1>Why We Are Better</h1>
-        <p>Our commnitment to excellence in the realm of juices sets us apart from the competition </p>
-
-      </div>
-
-
-      <div class="card-container">
-        <div class="card">
-          <img src="/images/grapes.jpg" alt="">
-          <div class="card-content">
-            <h3>Grape Flavour</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-              Tempore, voluptates. Eius id magnam rem vero?</p>
-              <a href="" class="btn">See More</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="/images/grapes.jpg" alt="">
-          <div class="card-content">
-            <h3>Grape Flavour</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-              Tempore, voluptates. Eius id magnam rem vero?</p>
-              <a href="" class="btn">See More</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="/images/grapes.jpg" alt="">
-          <div class="card-content">
-            <h3>Grape Flavour</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-              Tempore, voluptates. Eius id magnam rem vero?</p>
-              <a href="" class="btn">See More</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="/images/grapes.jpg" alt="">
-          <div class="card-content">
-            <h3>Grape Flavour</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-              Tempore, voluptates. Eius id magnam rem vero?</p>
-              <a href="" class="btn">See More</a>
-          </div>
-        </div>
-
-      </div>
-
-    </section>
-
-    <!-- <section id="menu">
+      <!-- <section id="menu">
       <h1>Explore Best Menu Selection</h1>
 
       <figure>
@@ -122,66 +126,90 @@
 
     </section> -->
 
-    <section id="menu">
+      <section id="menu">
+        <h1>Explore best menu selections</h1>
 
-      <h1>Explore best menu selections</h1>
-      <!-- <div class="marquee-container">
-        <marquee behavior="" direction="">
+        <div class="marquee-container">
+          <div class="marquee">
+            <img src="./images/grapes.jpg" />
+            <img src="./images/grapes.jpg" />
+            <img src="./images/grapes.jpg" />
+            <img src="./images/grapes.jpg" />
+            <img src="./images/grapes.jpg" />
+            <img src="./images/grapes.jpg" />
 
-          <div class="menuimg">
-          <img src="./images/apples.jpg" alt="">
-          <img src="./images/chaise.jpg" alt="">
-          <img src="./images/fruit.jpg" alt="">
-          <img src="./images/grapes.jpg" alt="">
-          <img src="./images/kiwi.jpg" alt="">
-          <img src="./images/pineapple.jpg" alt="">
+            <img src="./images/grapes.jpg" />
+            <img src="./images/grapes.jpg" />
+            <img src="./images/grapes.jpg" />
+            <img src="./images/grapes.jpg" />
+            <img src="./images/grapes.jpg" />
+            <img src="./images/grapes.jpg" />
           </div>
-  
-        </marquee>
-      </div> -->
+        </div>
+      </section>
 
-      <div class="marquee-container">
-        <div class="marquee">
-          <!-- first set -->
+      <footer>
+        <div id="sitemap">
+          <div class="pages">
+            <h2>All our pages</h2>
+            <div sitelinks>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Servies</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
 
-          <img src="./images/grapes.jpg">
-          <img src="./images/grapes.jpg">
-          <img src="./images/grapes.jpg">
-          <img src="./images/grapes.jpg">
-          <img src="./images/grapes.jpg">
-          <img src="./images/grapes.jpg">
-          <!-- duplicate set -->
-          <img src="./images/grapes.jpg">
-          <img src="./images/grapes.jpg">
-          <img src="./images/grapes.jpg">
-          <img src="./images/grapes.jpg">
-          <img src="./images/grapes.jpg">
-          <img src="./images/grapes.jpg">
+          <div class="contact">
+            <img src="./images/logo.png" alt="">
+            <div>
+              <svg height="24px" width="24px" id="phoneIcon">
+                <use href="#phone" />
+              </svg>
+              <span>(+234) 123456789</span>
+            </div>
+
+            <div>
+              <svg height="22px" width="22px" id="mailIcon">
+                <use href="#mail" />
+              </svg>
+              <span>xyz@gmail.com</span>
+            </div>
+          </div>
 
         </div>
-      </div>
-
-
-    </section>
-
-
-
-
-  </main>
-  <svg style="display: none">
-    <symbol id="menubtn" viewbox="0 0 24 24">
-      <path d="M24 18v1h-24v-1h24zm0-6v1h-24v-1h24zm0-6v1h-24v-1h24z" fill="red" />
-      <path d="M24 19h-24v-1h24v1zm0-6h-24v-1h24v1zm0-6h-24v-1h24v1z" />
-    </symbol>
-    <symbol id="close-menu" viewbox="0 0 24 24">
-      <path
-        d="M12 11.293l10.293-10.293.707.707-10.293 10.293 10.293 10.293-.707.707-10.293-10.293-10.293 10.293-.707-.707 10.293-10.293-10.293-10.293.707-.707 10.293 10.293z" />
-    </symbol>
-    <symbol id="fav" viewbox="0 0 24 24">
-      <path
-        d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181" />
-    </symbol>
-  </svg>
-</body>
-
+      </footer>
+    </main>
+    <svg style="display: none">
+      <symbol id="menubtn" viewbox="0 0 24 24">
+        <path
+          d="M24 18v1h-24v-1h24zm0-6v1h-24v-1h24zm0-6v1h-24v-1h24z"
+          fill="red"
+        />
+        <path d="M24 19h-24v-1h24v1zm0-6h-24v-1h24v1zm0-6h-24v-1h24v1z" />
+      </symbol>
+      <symbol id="close-menu" viewbox="0 0 24 24">
+        <path
+          d="M12 11.293l10.293-10.293.707.707-10.293 10.293 10.293 10.293-.707.707-10.293-10.293-10.293 10.293-.707-.707 10.293-10.293-10.293-10.293.707-.707 10.293 10.293z"
+        />
+      </symbol>
+      <symbol id="fav" viewbox="0 0 24 24">
+        <path
+          d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181"
+        />
+      </symbol>
+      <symbol id="phone" viewbox="0 0 24 24">
+        <path
+          d="M8.26 1.289l-1.564.772c-5.793 3.02 2.798 20.944 9.31 20.944.46 0 .904-.094 1.317-.284l1.542-.755-2.898-5.594-1.54.754c-.181.087-.384.134-.597.134-2.561 0-6.841-8.204-4.241-9.596l1.546-.763-2.875-5.612zm7.746 22.711c-5.68 0-12.221-11.114-12.221-17.832 0-2.419.833-4.146 2.457-4.992l2.382-1.176 3.857 7.347-2.437 1.201c-1.439.772 2.409 8.424 3.956 7.68l2.399-1.179 3.816 7.36s-2.36 1.162-2.476 1.215c-.547.251-1.129.376-1.733.376"
+        />
+      </symbol>
+      <symbol id="mail" viewbox="0 0 24 24">
+        <path
+          d="M24 21h-24v-18h24v18zm-23-16.477v15.477h22v-15.477l-10.999 10-11.001-10zm21.089-.523h-20.176l10.088 9.171 10.088-9.171z"
+        />
+      </symbol>
+    </svg>
+  </body>
 </html>
